@@ -32,4 +32,11 @@ cask "zentao-cli" do
   homepage "https://github.com/windosx/zentao-cli"
 
   binary "zentao"
+
+  postflight do
+    # 移除 macOS Gatekeeper 隔离标记，开箱即用
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{staged_path}/zentao"],
+                   sudo: false
+  end
 end
