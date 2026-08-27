@@ -4,24 +4,24 @@ cask "zentao-cli" do
 
   on_macos do
     on_arm do
-      sha256 "9578e80181714b86c8bd4a3c7626f91ae8aa12ff6dd69c6cd563fc90c00251b5"
+      sha256 "86eaf70d562bf79cda7312c3ce07562922ed2cc38a43ac6c0bb409e51b402423"
       url "https://github.com/windosx/zentao-cli/releases/download/v#{version}/zentao-cli-#{version}-darwin-arm64.tar.gz"
       rename "zentao-cli-1.1.0+21.7-darwin-arm64/zentao", "zentao"
     end
     on_intel do
-      sha256 "e19610959f1a01d9ac99c08934b6df3e40959b7f7eb22c74300571ce5ef3a80f"
+      sha256 "4f6c7c2121c4b7f759485f183695ae8ba344c1dff6d2488f17cf5e619e38f3e2"
       url "https://github.com/windosx/zentao-cli/releases/download/v#{version}/zentao-cli-#{version}-darwin-amd64.tar.gz"
       rename "zentao-cli-1.1.0+21.7-darwin-amd64/zentao", "zentao"
     end
   end
   on_linux do
     on_arm do
-      sha256 "6f85840f68118d764234031328f1aebf655a73eaaed17754a32317ec55c2e955"
+      sha256 "e1908795f3c5249ce5caf53f847230ae7e5434d25e583453255a7952e6980998"
       url "https://github.com/windosx/zentao-cli/releases/download/v#{version}/zentao-cli-#{version}-linux-arm64.tar.gz"
       rename "zentao-cli-1.1.0+21.7-linux-arm64/zentao", "zentao"
     end
     on_intel do
-      sha256 "98e2721cf00e04c6222a41748fa7655e09e87341447a31f27237e46d0883c35a"
+      sha256 "22dd91c645d8b194c817b0c2e18f2a0e6c53102f7f6b214d31f741728351e56b"
       url "https://github.com/windosx/zentao-cli/releases/download/v#{version}/zentao-cli-#{version}-linux-amd64.tar.gz"
       rename "zentao-cli-1.1.0+21.7-linux-amd64/zentao", "zentao"
     end
